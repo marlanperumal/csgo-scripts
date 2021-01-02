@@ -1,0 +1,40 @@
+alias "cp_team_camera_on" "mp_forcecamera 1; spec_allow_roaming 1; spec_dz_group_teams 0; tv_enable 1;"
+alias "cp_team_camera_off" "mp_forcecamera 0; spec_allow_roaming 0; spec_dz_group_teams 1; tv_enable 0;"
+
+alias "cp_ff_on" "mp_friendlyfire 1; ff_damage_reduction_bullets 1; ff_damage_reduction_grenade 1; ff_damage_reduction_other 1; ff_damage_reduction_grenade_self 1; mp_autokick 0; removeallids;"
+alias "cp_ff_off" "mp_friendlyfire 0; ff_damage_reduction_bullets 1; ff_damage_reduction_grenade 1; ff_damage_reduction_other 1; ff_damage_reduction_grenade_self 1; mp_autokick 0; removeallids;"
+
+alias "cp_wingman" "game_type 0; game_mode 2; mp_warmup_end; mp_restartgame 1; mapgroup mg_active; say Game Mode: Wingman"
+alias "cp_bloodletter" "game_type 1; game_mode 0; exec op08_bloodletter.cfg; mp_warmup_end; mp_restartgame 1; mapgroup mg_active; say Game Mode: Bloodletter"
+alias "cp_bounty_hunter" "game_type 1; game_mode 2; exec op08_bounty_hunter.cfg; mp_warmup_end; mp_restartgame 1; mapgroup mg_active; say Game Mode: Bounty Hunter"
+alias "cp_flying_scoutsman" "game_type 0; game_mode 0; exec op08_flying_scoutsman.cfg; mp_warmup_end; mp_restartgame 1; mapgroup mg_active; say Game Mode: Flying Scoutsman"
+alias "cp_headshots" "game_type 1; game_mode 2; exec op08_headshots.cfg; mp_warmup_end; mp_restartgame 1; mapgroup mg_active; say Game Mode: Headshots"
+alias "cp_heavy_assault_suit" "game_type 0; game_mode 0; exec op08_heavy_assault_suit.cfg; mp_warmup_end; mp_restartgame 1; mapgroup mg_active; say Game Mode Heavy Assault Suit"
+alias "cp_hunter_gatherers" "game_type 1; game_mode 2; exec op08_hunter_gatherers.cfg; mp_warmup_end; mp_restartgame 1; mapgroup mg_active; say Game Mode: Hunter Gatherers"
+alias "cp_stab_stab_zap" "game_type 0; game_mode 0; exec op08_stab_stab_zap.cfg; mp_warmup_end; mp_restartgame 1; mapgroup mg_active; say Game Mode: Stab Stab Zap"
+alias "cp_team_deathmatch" "game_type 1; game_mode 2; exec op08_team_deathmatch.cfg; mp_warmup_end; mp_restartgame 1; mapgroup mg_active; say Game Mode: Team Deathmatch"
+alias "cp_trigger_discipline" "game_type 0; game_mode 0; exec op08_trigger_discipline.cfg; mp_warmup_end; mp_restartgame 1; mapgroup mg_active; say Game Mode: Trigger Discipline"
+alias "cp_weapons_expert" "game_type 0; game_mode 1; exec op08_weapons_expert.cfg; mp_warmup_end; mp_restartgame 1; mapgroup mg_active; say Game Mode: Weapons Expert"
+
+alias "cp_arms_race" "game_type 1; game_mode 0; exec gamemode_armsrace.cfg; mp_warmup_end; mp_restartgame 1; mapgroup mg_armsrace; say Game Mode: Arms Race"
+alias "cp_casual_s" "game_type 0; game_mode 0; exec gamemode_casual.cfg; mp_warmup_end; mp_restartgame 1; mapgroup mg_casualsigma; say Game Mode: Casual Sigma"
+alias "cp_casual_d" "game_type 0; game_mode 0; exec gamemode_casual.cfg; mp_warmup_end; mp_restartgame 1; mapgroup mg_casualdelta; say Game Mode: Casual Delta"
+alias "cp_casual_h" "game_type 0; game_mode 0; exec gamemode_casual.cfg; mp_warmup_end; mp_restartgame 1; mapgroup mg_hostage; say Game Mode: Casual Hostage"
+alias "cp_deathmatch" "game_type 1; game_mode 2; exec gamemode_deathmatch.cfg; mp_warmup_end; mp_restartgame 1; mapgroup mg_deathmatch; say Game Mode: Deathmatch"
+alias "cp_demolition" "game_type 1; game_mode 1; exec gamemode_demolition.cfg; mp_warmup_end; mp_restartgame 1; mapgroup mg_demolition; say Game Mode: Demolition"
+
+alias "cp_dangerzone" "game_mode 6; game_type 0; changelevel dz_blacksite; sv_dz_team_count 2; sv_dz_jointeam_allowed 1; sv_dz_autojointeam 0; sv_dz_player_spawn_armor 1; cl_dz_playagain_auto_spectate 1"
+
+alias "cp_retakes" "game_type 0; game_mode 0; sv_skirmish_id 12; exec gamemode_casual.cfg; mp_warmup_end; mp_restartgame 1; mapgroup mg_retakes; say Game Mode: Retakes"
+
+alias "cp_bot_ct_5" "bot_kick; bot_join_team ct; bot_quota 5; mp_restartgame 1;"
+alias "cp_bot_ct_10" "bot_kick; bot_join_team ct; bot_quota 10; mp_restartgame 1;"
+alias "cp_bot_ct_15" "bot_kick; bot_join_team ct; bot_quota 15; mp_restartgame 1;"
+
+alias "cp_bot_t_5" "bot_kick; bot_join_team t; bot_quota 5; mp_restartgame 1;"
+alias "cp_bot_t_10" "bot_kick; bot_join_team t; bot_quota 10; mp_restartgame 1;"
+alias "cp_bot_t_15" "bot_kick; bot_join_team t; bot_quota 15; mp_restartgame 1;"
+
+alias "cp_zombie_reset" "bot_knives_only 0; mp_damage_scale_t_body 1.0; mp_damage_scale_t_head 1.0; mp_damage_scale_ct_body 1.0; mp_damage_scale_ct_head 1.0; sv_maxspeed 320;"
+alias "cp_zombie_ct" "bot_knives_only 1; mp_damage_scale_ct_body 0.1; mp_damage_scale_ct_head 0.25; sv_maxspeed 640;"
+alias "cp_zombie_t" "bot_knives_only 1; mp_damage_scale_t_body 0.1; mp_damage_scale_t_head 0.25; sv_maxspeed 640;"

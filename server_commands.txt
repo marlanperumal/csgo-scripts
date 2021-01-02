@@ -1,0 +1,1 @@
+-tickrate 64 -usercon +game_type 0 +game_mode 0 +mapgroup mg_active -maxplayers_override 64 +host_workshop_collection 2173550313 +workshop_start_map 125439125 -authkey <key> -nobreakpad
